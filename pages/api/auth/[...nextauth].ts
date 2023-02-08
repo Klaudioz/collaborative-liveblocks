@@ -1,5 +1,6 @@
 import NextAuth from "next-auth";
 import GithubProvider from "next-auth/providers/github";
+import GoogleProvider from "next-auth/providers/google";
 import { getUser } from "../../../lib/server";
 import { User } from "../../../types";
 
@@ -30,10 +31,10 @@ export const authOptions = {
   // Configure one or more authentication providers
   // More info: https://next-auth.js.org/providers/
   providers: [
-    // Use GitHub authentication
-    GithubProvider({
-      clientId: process.env.GITHUB_CLIENT_ID as string,
-      clientSecret: process.env.GITHUB_CLIENT_SECRET as string,
+    // Use Google authentication
+    GoogleProvider({
+      clientId: process.env.GOOGLE_CLIENT_ID as string,
+      clientSecret: process.env.GOOGLE_CLIENT_SECRET as string,
     }),
   ],
 };

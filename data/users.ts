@@ -18,16 +18,16 @@ export const users: Omit<User, "color">[] = [
   },
   */
   {
-    id: "charlie.layne@example.com",
-    name: "Charlie Layne",
-    avatar: "https://liveblocks.io/avatars/avatar-2.png",
-    groupIds: ["product", "engineering", "design"],
+    id: "klaudioz@gmail.com",
+    name: "Claudio Canales",
+    avatar: "https://www.claud.dev/favicon.ico",
+    groupIds: ["engineering"],
   },
   {
     id: "mislav.abha@example.com",
     name: "Mislav Abha",
     avatar: "https://liveblocks.io/avatars/avatar-3.png",
-    groupIds: ["engineering"],
+    groupIds: ["product", "engineering", "design"],
   },
   {
     id: "tatum.paolo@example.com",

@@ -32,12 +32,12 @@ if (typeof window !== "undefined") {
   const providers = await getProviders();
 
   if (providers?.github) {
-    if (!process.env.GITHUB_CLIENT_ID || !process.env.GITHUB_CLIENT_SECRET) {
-      console.log(`Your GitHub secrets are missing from .env.local
+    if (!process.env.GOOGLE_CLIENT_ID || !process.env.GOOGLE_CLIENT_SECRET) {
+      console.log(`Your Google secrets are missing from .env.local
       
 Example .env.local file:
-GITHUB_CLIENT_ID=sk_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-GITHUB_CLIENT_SECRET=sk_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+GOOGLE_CLIENT_ID=sk_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+GOOGLE_CLIENT_SECRET=sk_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
       
 Follow the full starter kit guide to learn how to get them:
 https://liveblocks.io/docs/guides/nextjs-starter-kit#github-authentication
